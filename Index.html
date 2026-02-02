@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>9 Months With G 💖</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', cursive;
+  background: linear-gradient(135deg, #ffd6e8, #fff0f5);
+  text-align: center;
+  color: #ff4d88;
+}
+
+section {
+  padding: 40px 15px;
+  min-height: 100vh;
+}
+
+.hidden { display: none; }
+
+h1, h2 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+button {
+  background: #ff4d88;
+  border: none;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 8px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  max-width: 90%;
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.heart {
+  font-size: 3em;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+img {
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 85%;
+}
+</style>
+</head>
+
+<body>
+
+<!-- MUSIC (tap once on phone to start) -->
+<audio id="music" loop>
+  <source src="mein-rang-sharbatoon-ka.mp3" type="audio/mpeg">
+</audio>
+
+<section id="intro">
+  <h1>Happy 9 Months, G 💖</h1>
+  <div class="heart">💞</div>
+  <p>
+    Every moment with you feels like  
+    <strong>“Mein rang sharbatoon ka”</strong> ✨  
+    sweet, warm, and unforgettable.
+  </p>
+  <button onclick="startLove()">Start 💕</button>
+</section>
+
+<section id="menu" class="hidden">
+  <button onclick="showSection('game')">Love Game 🕹️</button>
+  <button onclick="showSection('quiz')">Love Quiz 💌</button>
+  <button onclick="showSection('gallery')">Our Memories 📸</button>
+  <button onclick="openLetter()">Love Letter 💖</button>
+</section>
+
+<section id="game" class="hidden">
+  <div class="card">
+    <h2>Tap For Love 💘</h2>
+    <p>Every tap = my love for you</p>
+    <h1 id="
